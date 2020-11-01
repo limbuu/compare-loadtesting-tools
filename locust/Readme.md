@@ -71,5 +71,11 @@ $ docker inspect <container-id> | grep IPAddress
 ![alt text](https://github.com/limbuu/compare-loadtesting-tools/blob/main/locust/images/locust-chart.png)
 
 
+# More Information on Locust:
+### Website: https://locust.io/
+### Documentation: https://docs.locust.io/
+### Github: https://github.com/locustio/locust
+
+
 
 
