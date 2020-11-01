@@ -43,4 +43,20 @@ host = "http://172.17.0.3:5000"
 ```
 $ docker run -p 8089:8089 -v $PWD:/mnt/locust locustio/locust -f /mnt/locust/locustfile.py
 ```
+# 3. Locust Web Interface
+#### Login Page (Local Run):
+
+![alt text](https://github.com/limbuu/compare-loadtesting-tools/blob/main/locust/images/locust-local-WI.png)
+
+#### Login Page (Docker Run):
+![alt text](https://github.com/limbuu/compare-loadtesting-tools/blob/main/locust/images/locust-docker-WI.png)
+
+#### Stats Page: 
+![alt text](https://github.com/limbuu/compare-loadtesting-tools/blob/main/locust/images/locust-stats.png)
+
+#### Chart Page: 
+![alt text](https://github.com/limbuu/compare-loadtesting-tools/blob/main/locust/images/locust-chart.png)
+
+
+
 
