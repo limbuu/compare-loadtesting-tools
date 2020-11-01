@@ -3,7 +3,7 @@
 ```
 $ go version
 
-go version go1.6.2 linux/amd64
+go version go1.15.2 linux/amd64
 ```
 There are two different ways of installing vegeta, you can install in either of the following ways
 ### 1. Installation from tar.gz file:
@@ -24,7 +24,26 @@ Commit:
 Runtime: go1.15.2 linux/amd64
 Date: 
 ```
-### 2. Run Loadtest with Vegeta
+
+### 2. Installation as go module:
+#### To avoid permission denied in /usr/bin path, run command:
+```
+$ sudo chown -R $USER:$USER /usr/local/go
+```
+#### Install as go module directly from github link
+```
+$ go get -u github.com/tsenart/vegeta
+```
+#### check installation
+```
+$ vegeta -version
+Version: 
+Commit: 
+Runtime: go1.15.2 linux/amd64
+Date: 
+```
+
+### Run Loadtest with Vegeta
 ```
 $ echo "GET http://0.0.0.0:5000" | vegeta attack -duration=10s | tee results.bin | vegeta report
 
