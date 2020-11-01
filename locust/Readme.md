@@ -16,6 +16,8 @@ locust 1.1
 ```
 $ locust -f locustfile.py
 ```
+## Access Locust on browser
+Open browser and ponit it to http://localhost:8089
 
 # 2. Docker Setup
 Make sure, you have installed docker already. 
@@ -43,6 +45,17 @@ host = "http://172.17.0.3:5000"
 ```
 $ docker run -p 8089:8089 -v $PWD:/mnt/locust locustio/locust -f /mnt/locust/locustfile.py
 ```
+
+## Access locust on browser
+```
+$ docker inspect <container-id> | grep IPAddress
+
+        "SecondaryIPAddresses": null,
+        "IPAddress": "172.17.0.3",
+        "IPAddress": "172.17.0.3",
+ ```
+ Now, open locust on browser at http://172.17.03:8089 
+ 
 # 3. Locust Web Interface
 #### Login Page (Local Run):
 
